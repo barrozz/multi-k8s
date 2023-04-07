@@ -1,4 +1,4 @@
 
 
-service-account.json
-multi-*.json.enc
+service-account.json.*
+# *.json.enc
