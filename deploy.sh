@@ -1,8 +1,8 @@
 #!/bin/bash
 
-docker build -t bardoclub/multi-client:latest -t bardoclub/multi-client:"${SHA}" -f ./client/Dockerfile.dev ./client
-docker build -t bardoclub/multi-server:latest -t bardoclub/multi-server:"${SHA}" -f ./server/Dockerfile.dev ./server
-docker build -t bardoclub/multi-worker:latest -t bardoclub/multi-worker:"${SHA}" -f ./worker/Dockerfile.dev ./worker
+docker build -t bardoclub/multi-client:latest -t bardoclub/multi-client:"${SHA}" -f ./client/Dockerfile ./client
+docker build -t bardoclub/multi-server:latest -t bardoclub/multi-server:"${SHA}" -f ./server/Dockerfile ./server
+docker build -t bardoclub/multi-worker:latest -t bardoclub/multi-worker:"${SHA}" -f ./worker/Dockerfile ./worker
 
 docker push bardoclub/multi-client:latest
 docker push bardoclub/multi-server:latest
